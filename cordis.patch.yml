@@ -1,0 +1,4 @@
+# dsh-rail-x bundle patch: mount the plugin with default config.
+- insert:
+    - id: rail-x
+      name: dsh-rail-x

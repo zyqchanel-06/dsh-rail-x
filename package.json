@@ -1,0 +1,50 @@
+{
+  "name": "dsh-rail-x",
+  "version": "0.1.0",
+  "description": "Always-visible remove buttons for draft attachments in the DSH composer rail (fixes hover-only opacity:0 hiding the X).",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "client-plugin",
+    "attachment",
+    "ux"
+  ],
+  "author": "zyqchanel-06",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zyqchanel-06/dsh-rail-x.git"
+  },
+  "homepage": "https://github.com/zyqchanel-06/dsh-rail-x#readme",
+  "bugs": {
+    "url": "https://github.com/zyqchanel-06/dsh-rail-x/issues"
+  },
+  "scripts": {
+    "test": "node --test test/plugin.test.mjs"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [],
+      "immediately": true
+    }
+  }
+}
